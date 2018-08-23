@@ -68,6 +68,7 @@
 
         <!-- video 16:9 aspect ratio -->
         <section id="video">
+            <!-- <div class="overlay"></div> -->
             <div class="video-overlay">
                 <div class="scroll-to">
                     <a href='#msa' class="animated fadeInDown" data-wow-delay="0.3s">
@@ -81,7 +82,7 @@
         </section>
         
         <!-- msa -->
-        <section id="msa">
+        <section id="msa" class="box">
             <div class="container">
                 <div class="row">
                     <div class="caption">
@@ -99,7 +100,7 @@
         <!-- About -->
         <section id="about">
             <div class="container">
-                <div class="bg-01"></div>
+                <!-- <div class="bg-01"></div> -->
                 <div class="center-title">
                     <h3>Digital Labs for X는?</h3>
                     <span class="center-line"></span> 
@@ -284,7 +285,6 @@
                         </div>  
 
                     </div>
-                    <!-- / BOX -->
                 </div>
             </div>
         </section>
@@ -471,10 +471,8 @@
                                             </dl>
                                         </div>
                                     </div>
-                                   
-                                    <p style="margin-top: 0px; padding-top: 0px">※ 위의 개인정보 수집∙이용에 대한 동의를 거부할 권리가 있습니다. 
+                                     <p style="margin-top: 0px; padding-top: 0px">※ 위의 개인정보 수집∙이용에 대한 동의를 거부할 권리가 있습니다. 
 그러나 필수 사항의 수집∙이용에 대한 동의를 거부할 경우, 서비스 관련 문의 기능 제공이 제한될 수 있습니다.</p>
-                                  
                                 </div>
                                 
                                 <div class="row">
@@ -579,13 +577,6 @@
         <!-- gmap js -->      
         <div id="map-canvas" style="width: 100%;"></div>
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script>
-            $(document).ready(function () {
-                $(".navbar-nav li.trigger-collapse a").click(function(event) {
-                $(".navbar-collapse").collapse('hide');
-                });
-            });
-            </script>
         <script type="text/javascript">
             function initialize() {
                 var mapLocation = new google.maps.LatLng('37.366381', '127.106573'); // 지도에서 가운데로 위치할 위도와 경도
