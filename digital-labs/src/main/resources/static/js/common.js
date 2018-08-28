@@ -166,6 +166,29 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 	                formData.subject = $('#Subject').val();
 	                formData.message = $('#message').val();
 	                
+	                if(formData.name == "") {
+	                		alert("이름을 입력하세요.");
+	                		return;
+	                } else if(formData.email == "") {
+	                		alert("이메일을 입력하세요.");
+	                		return;
+	                } else if(formData.subject == "") {
+	                		alert("제목을 입력하세요.");
+	                		return;
+	                } else if(formData.message == "") {
+	                		alert("메세지를 입력하세요");
+	                		return;
+	                }
+	                
+	                var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+                	
+	                
+	                if(formData.email.match(regExp) != null) {
+	                } else {
+	                		alert("올바른 이메일을 입력하세요.");
+	                		return;
+	                }
+	                
 	                console.log("btnSend click() : data = " + JSON.stringify(formData));
 	                
 	                $.post("/email", formData, function(data) {
