@@ -32,6 +32,13 @@
         a(window).scroll(e)
     }(jQuery);
 
+    
+    $(document).ready(function () {
+        $(".navbar-nav li a").click(function(event) {
+            $(".navbar-collapse").collapse('hide');
+        });
+    });
+
 
 // back-to-top
 (function(){
@@ -146,14 +153,6 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 //});
 
 
-
-// smoothwheel
-    $('a').click(function(){
-    $('html, body').animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
-    });
 
     $(function() {
         console.log( "ready!" );

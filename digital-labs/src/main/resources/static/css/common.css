@@ -820,6 +820,8 @@ text-align: left; }
 .navbar-default .navbar-brand:focus, 
 .navbar-default .navbar-brand:hover {
   color: #fff; }
+.navbar-default .navbar-brand.logo-black {
+  display: none; }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff; }
 .navbar-default .navbar-toggle {
@@ -832,8 +834,8 @@ text-align: left; }
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 15px;
+  padding-right: 15px; }
 .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
   text-decoration: underline; }
@@ -1306,10 +1308,16 @@ text-align: left; }
   margin-bottom: 30px; } 
 .contact-info .media .media-body {
   padding-top:5px;
-  font-size: 16px; }
+  font-size: 15px;
+  color: #555; }
+.contact-info .media .media-body .mail {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #5470fb; }
 .contact-info .media-heading {
   color: #111;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase; }
 .contact-info i {
@@ -1324,8 +1332,13 @@ text-align: left; }
   border-radius: 50%;
   background-color: #fff;
   border:2px solid #5470fb;
-  font-size: 18px;
   color: #5470fb; }
+.contact-info .fa-map-marker {
+  font-size: 24px !important; }
+.contact-info .fa-mobile {
+  font-size: 28px !important; }
+.contact-info .fa-envelope {
+  font-size: 18px !important; }
 
 
 
@@ -1406,6 +1419,14 @@ text-align: left; }
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 700; }
+  .footer-col .navbar-brand {
+    display: block;
+    width: 100%;
+    padding:0;
+    height: 21px;
+    margin-bottom: 20px; }
+  .footer-col .navbar-brand>img {
+    margin:0;  }
   .footer-col p {
     color:#666;
     font-size: 14px;
@@ -2288,7 +2309,7 @@ text-align: left; }
 /* PC, 태블릿, 모바일 */
 @media all and (min-width:1200px) and (min-width:991px) {
   #review .carousel-inner .item, #review .carousel-inner .item p {
-    padding:0 70px; }
+    padding:0 70px; }   
 }
 
 @media all and (max-width:1198px) and (min-width:768px) {
@@ -2305,7 +2326,11 @@ text-align: left; }
     font-weight: 700;
     border-bottom: 1px solid #ddd; }   
   #mainNav.navbar-shrink.navbar-default .navbar-brand {
-    color: #111; } 
+    color: #111; }
+  #mainNav.navbar-shrink.navbar-default .navbar-brand.logo-white {
+    display: none; }
+  #mainNav.navbar-shrink.navbar-default .navbar-brand.logo-black {
+    display: block; }  
   #mainNav.navbar-shrink.navbar-default .navbar-nav> li > a {
     color: #111; }
   #mainNav.navbar-shrink .nav > li > span,
@@ -2331,9 +2356,13 @@ text-align: left; }
     background-color:#fff;
     border-bottom: 1px solid #ddd; } 
   #mainNav.navbar-shrink.navbar-default .navbar-brand {
-    color: #111; }      
+    color: #111; }  
+  #mainNav.navbar-shrink.navbar-default .navbar-brand.logo-white {
+    display: none; }
+  #mainNav.navbar-shrink.navbar-default .navbar-brand.logo-black {
+    display: block; }    
   #mainNav.navbar-shrink.navbar-default .navbar-nav> li > a {
-    color: #111; }
+    color: #111;  }
   #mainNav.navbar-shrink .nav > li > span,
   #mainNav.navbar-shrink .nav > li > span:hover{
     color: #111; } 
@@ -2395,6 +2424,10 @@ text-align: left; }
     background-color: rgba(0, 0, 0, 0.8); }
   #mainNav.navbar-shrink.navbar-default .navbar-brand {
     color: #fff; } 
+  #mainNav.navbar-shrink.navbar-default .navbar-brand.logo-white {
+    display: block; }
+  #mainNav.navbar-shrink.navbar-default .navbar-brand.logo-black {
+    display: none; }  
   #mainNav.navbar-shrink.navbar-default .navbar-nav> li > a {
     color: #fff; }
   #mainNav.navbar-shrink .nav > li > span,
@@ -2454,6 +2487,8 @@ text-align: left; }
     border-bottom: 1px solid #ddd; }
   .contact-info {
     margin-top: 0; } 
+  .footer-col .navbar-brand > img {
+    margin: 0 auto; }
 }
 
 @media only screen and (max-width:480px) {
@@ -2486,6 +2521,7 @@ text-align: left; }
   #about .thumbnail {
     padding: 0 15px;}
   #labs {
+    padding-top: 50px;
     background-color: #f9f9fd; }
   #review-area {
     padding: 0 0 90px 0; }
@@ -2497,11 +2533,20 @@ text-align: left; }
     line-height: 30px; }
   #review-area .img {
     display: none; } 
+  .agree-area dl dt, .agree-area dl dd {
+    display: block;
+    width: 100%; }
+  .agree-area dl dt {
+    margin-bottom: 5px; }
+  .agree-area dl dd {
+    margin-bottom: 20px; }
   #footer .footer-contact { 
     border-bottom: 1px solid #ddd;
     padding-top:20px;
     padding-bottom: 50px;
     margin-bottom: 50px;  }
+    .footer-col .navbar-brand > img {
+      margin: 0 auto; }
     .footer-col p {
       font-size: 14px; }
     .footer-sitemap .footer-col > ul > li,    
