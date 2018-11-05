@@ -27,7 +27,10 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         
-                <!-- Global site tag (gtag.js) - Google Analytics -->
+        
+        <script async src="https://www.youtube.com/iframe_api?enablejsapi=1&version=3"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126824510-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -55,10 +58,9 @@
                     <!-- <a class="navbar-brand" href="index.html">
 					Digital Labs for X
 					</a> -->
-					<a class="navbar-brand logo-white" href="#">
-					<img src="img/logo.png" alt="">
+					<a class="navbar-brand logo-white" href="#" style="font-size: 0px; line-height: 0;">logo<img src="img/logo.png" alt="">
 					</a>
-					<a class="navbar-brand logo-black" href="#">
+					<a class="navbar-brand logo-black" href="#" >
 					<img src="img/logo-2.png" alt="">
 					</a>
                 </div>
@@ -98,7 +100,7 @@
                 </div>
             </div>
             <div class="embed-responsive embed-responsive-16by9">          
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vgi9sW86cxE?rel=0&amp;autoplay=true&amp;controls=0&amp;modestbranding=1&amp;mute=true&amp;showinfo=0&amp;autohide=0&amp;loop=1&amp;startAt=1&amp;playlist=vgi9sW86cxE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe id="youtubePlayer" class="embed-responsive-item" src="https://www.youtube.com/embed/vgi9sW86cxE?enablejsapi=1&rel=0&amp;autoplay=true&amp;controls=0&amp;modestbranding=1&amp;mute=true&amp;showinfo=0&amp;autohide=0&amp;loop=1&amp;startAt=1&amp;playlist=vgi9sW86cxE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </section>
         
@@ -205,7 +207,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
-                                <a href="cloud.html">
+                                <a href="cloud.html" id="cloud_link">
                                     <div class="thumbnail">
                                         <div class="figure">		
                                             <span class="img-icon service-04"></span>
@@ -228,7 +230,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6 col-sm-6">	
-                                <a href="data.html">
+                                <a href="data.html" id="data_link">
                                     <div class="thumbnail">	
                                         <div class="figure">		
                                             <span class="img-icon service-06"></span>
@@ -253,7 +255,7 @@
                             </div>
 
                             <div class="col-md-6 col-sm-6">	
-                                <a href="blockchain.html">
+                                <a href="blockchain.html" id="blockchain_link">
                                     <div class="thumbnail">	
                                             <div class="figure">		
                                                 <span class="img-icon service-05"></span>
@@ -278,7 +280,7 @@
                             </div> 
                             <div class="col-md-6 col-sm-6">	
                                 <a href="ai.html">
-                                    <div class="thumbnail">	
+                                    <div class="thumbnail" id="ai_link">	
                                             <div class="figure">		
                                                 <span class="img-icon service-07"></span>
                                                 <span class="title"><strong>AI</strong></span>
@@ -710,7 +712,7 @@
 							<!-- <a class="navbar-brand logo-white" href="#">
 							<img src="img/logo.png" alt="">
 							</a> -->
-							<a class="navbar-brand logo-black" href="#">
+							<a class="navbar-brand logo-black" href="#"  style="font-size: 0px; line-height: 0;">logo
 							<img src="img/logo-2.png" alt="">
 							</a>
                             <p>
@@ -785,6 +787,8 @@
 
         <!-- js -->
         <script src="js/common.js"></script> <!-- nav, smoothwheel, back-to-top -->
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/ga.js"></script>
 
         <!-- gmap js -->      
         <div id="map-canvas" style="width: 100%;"></div>

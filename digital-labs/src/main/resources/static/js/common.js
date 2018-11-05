@@ -119,13 +119,13 @@
 })();    
 
 // Scroll Up
-$('a[href*=#]').bind("click", function(e){
-    var anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $(anchor.attr('href')).offset().top - 50
-    }, 1500);
-    e.preventDefault();
-});
+//$('a[href*=#]').bind("click", function(e){
+//    var anchor = $(this);
+//    $('html, body').stop().animate({
+//        scrollTop: $(anchor.attr('href')).offset().top - 50
+//    }, 1500);
+//    e.preventDefault();
+//});
 
 // $(window).scroll(function() {
 // if ($(this).scrollTop() > 100) {
@@ -203,5 +203,6 @@ $(document).on('click','.navbar-collapse.in',function(e) {
         				alert("개인정보 활용에 동의해주세요.");
         			}
         });
+        
     });    
 
